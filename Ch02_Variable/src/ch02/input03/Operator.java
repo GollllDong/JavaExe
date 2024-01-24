@@ -13,9 +13,9 @@ public class Operator {
 		// jdk에 있는 클래스
 		Scanner sc = new Scanner(System.in);
 		System.out.println("더하기 연산 : ");
-		System.out.print("1번째 숫자 : ");
+		System.out.print("1번째 숫자 >>> ");
 		num1 = sc.nextInt();
-		System.out.print("2번째 숫자 : ");
+		System.out.print("2번째 숫자 >>> ");
 		num2 = sc.nextInt();
 		
 		// 결과 계산
