@@ -10,6 +10,7 @@ public class DataType {
 		boolean isRun = true;
 		String str = "a";
 		String name1 = "호우";
+		String name2 = "씨우";
 		
 		System.out.println(num);
 		num = 999;
@@ -18,6 +19,7 @@ public class DataType {
 		System.out.println(ch);
 		System.out.println(name);
 		System.out.println(name1);
+		System.out.println(name2);
 		System.out.println(isRun);
 		System.out.println(str);
 		
