@@ -8,7 +8,7 @@ public class WhileEx {
 		while (i <= 10) { // 초기식(시작 : 언제부터)
 			System.out.print(i + ", "); // 실행문
 			System.out.println("Hi");
-			i++; 		// 증감식 (변화 : 얼마만큼)
+			i++; 		 // 증감식 (변화 : 얼마만큼)
 		}
 
 	}
