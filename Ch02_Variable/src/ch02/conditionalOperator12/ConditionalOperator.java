@@ -1,4 +1,4 @@
-package ch02.conditionalOperator11;
+package ch02.conditionalOperator12;
 
 import java.util.Scanner;
 
