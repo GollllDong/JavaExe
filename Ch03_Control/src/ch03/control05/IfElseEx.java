@@ -28,5 +28,6 @@ public class IfElseEx {
 		}else {
 			System.out.println("해당 메뉴 번호가 없습니다.");
 		}
+		sc.close();
 	}
 }
