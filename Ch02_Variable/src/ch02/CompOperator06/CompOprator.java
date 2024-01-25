@@ -10,7 +10,7 @@ public class CompOprator {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("[대소 비교 연산");
+		System.out.println("대소 비교 연산");
 		System.out.println("1번째 숫자 입력");
 		num0 = sc.nextInt();
 		System.out.println("2번째 숫자 입력");
