@@ -8,6 +8,16 @@ public class Resolve4 {
 		while (i < 10) {
 			i += 2;
 			System.out.println("i의 짝수 : " + i);
+			// if(num % 2 == 0) { sout(num);} i++; 로도 가능
 		}
 	}
+//	public static void method1() {
+//		
+//		while (i < 10) {
+//			if(num % 2 == 0) { sout(num);} i++; 
+//		}
+//			i += 2;
+//			System.out.println("i의 짝수 : " + i);
+//			
+//	}
 }
