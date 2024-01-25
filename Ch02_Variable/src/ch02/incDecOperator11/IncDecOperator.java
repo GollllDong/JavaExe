@@ -19,8 +19,9 @@ public class IncDecOperator {
 		System.out.println("result " + result);
 		System.out.println("num " + num);
 		
-		num--;
-		System.out.println("num = " + num);
+
+		System.out.println("num = " + --num);
+		System.out.println("num = " + num--);
 	}
 
 }
