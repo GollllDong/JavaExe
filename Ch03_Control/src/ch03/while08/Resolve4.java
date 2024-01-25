@@ -12,7 +12,7 @@ public class Resolve4 {
 		}
 	}
 //	public static void method1() {
-//		
+//		메서드 구
 //		while (i < 10) {
 //			if(num % 2 == 0) { sout(num);} i++; 
 //		}
