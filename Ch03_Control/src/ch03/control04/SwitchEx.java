@@ -32,7 +32,7 @@ public class SwitchEx {
 				System.out.println("너비아니가 나왔습니다.");
 				break;
 			case 6 :
-				System.out.println("너비아니가 나왔습니다.");
+				System.out.println("잡채밥이 나왔습니다.");
 				break;
 			default :
 				System.out.println("해당 메뉴 번호가 없습니다.");
