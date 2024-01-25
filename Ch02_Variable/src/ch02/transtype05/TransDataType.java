@@ -10,7 +10,7 @@ public class TransDataType {
 		avg = total/stNum;
 		System.out.println("평균은 " + avg + "입니다");
 		avg = (double)total/stNum;	
-		// 컴파일러가 total을 double형으로 변환시켜줌
+		// 컴파일러가 total을 double형으로 변환시켜준다.
 		/*
 		 * 실수와 정수의 연산 결과는 ?
 		 * 표현범위가 실수 > 정수 이므로
