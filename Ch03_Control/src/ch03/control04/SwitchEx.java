@@ -10,6 +10,7 @@ public class SwitchEx {
 		System.out.println("3. 탕수육");
 		System.out.println("4. 유산슬");
 		System.out.println("5. 너비아니");
+		System.out.println("6. 잡채밥");
 		System.out.print("선택 >>> ");
 		
 		Scanner sc = new Scanner(System.in);
@@ -28,6 +29,9 @@ public class SwitchEx {
 				System.out.println("유산슬이 나왔습니다.");
 				break;
 			case 5 :
+				System.out.println("너비아니가 나왔습니다.");
+				break;
+			case 6 :
 				System.out.println("너비아니가 나왔습니다.");
 				break;
 			default :
