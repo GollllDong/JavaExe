@@ -53,7 +53,6 @@ public class Resolve1 {
 			+ "1원 : %d\n" ,m50000, m10000, m5000, m1000, m500, m100, m50, m10, m1);
 			
 		}System.out.println("End");
-		
 	}
 }
 	
