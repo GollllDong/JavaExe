@@ -10,20 +10,16 @@ public class Resolve3 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("1번째 정수 입력 >>> ");
+		System.out.print("1번째 정수 입력 >>> ");
 		num1 = sc.nextInt();
-		System.out.println("2번째 정수 입력 >>> ");
+		System.out.print("2번째 정수 입력 >>> ");
 		num2 = sc.nextInt();
-		System.out.println("3번째 정수 입력 >>> ");
+		System.out.print("3번째 정수 입력 >>> ");
 		num3 = sc.nextInt();
-		
-		System.out.println(num1);
-		System.out.println(num2);
-		System.out.println(num3);
 		
 		boolean result1 = (num1 + num2) > num3 || (num1 + num3) > num2 ? true : false ;
 		boolean result2 = (num2 + num3) > num1 ? true : false;
-		String value = result1 && result2 ? "삼각형 생성이 가능합니다." : "삼각형 생성이 불가능합니다.";
+		String value = result1 && result2 ? "삼각형 생성!!" : "삼각형 생성이 불가능합니다.";
 		
 		System.out.println(value);
 		
