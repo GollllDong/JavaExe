@@ -13,7 +13,7 @@ public class Resolve15 {
 			int in = sc.nextInt();
 			sum += in;
 			if (in == 0) {
-				value = true;
+				value = false;
 				sc.close();
 				break;
 			}
