@@ -7,7 +7,7 @@ public class Resolve15 {
 	public static void main(String[] args) {
 		boolean value = false;
 		int sum = 0;
-		while(value = true) {
+		while (value = true) {
 			System.out.print("입력(0 입력시 합산 결과 출력) >>> ");
 			Scanner sc = new Scanner(System.in);
 			int in = sc.nextInt();
@@ -16,8 +16,8 @@ public class Resolve15 {
 				value = true;
 				break;
 			}
-			
+
 		}
-		System.out.println(sum);
+		System.out.println("총합 : " + sum);
 	}
 }
