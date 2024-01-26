@@ -17,7 +17,7 @@ public class Resolve3 {
 		System.out.print("3번째 정수 입력 >>> ");
 		num3 = sc.nextInt();
 		
-		boolean result1 = (num1 + num2) > num3 || (num1 + num3) > num2 ? true : false ;
+		boolean result1 = (num1 + num2) > num3 && (num1 + num3) > num2 ? true : false ;
 		boolean result2 = (num2 + num3) > num1 ? true : false;
 		String value = result1 && result2 ? "삼각형 생성!!" : "삼각형 생성이 불가능합니다.";
 		
