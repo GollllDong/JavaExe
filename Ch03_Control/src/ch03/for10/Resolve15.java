@@ -14,10 +14,11 @@ public class Resolve15 {
 			sum += in;
 			if (in == 0) {
 				value = true;
+				sc.close();
 				break;
 			}
-
 		}
 		System.out.println("총합 : " + sum);
+		
 	}
 }
