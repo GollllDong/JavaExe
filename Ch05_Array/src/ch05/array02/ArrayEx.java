@@ -9,7 +9,7 @@ public class ArrayEx {
 		
 		//int변수 공간 3개 만들어줘. 대표이름은 kor
 		//배열은 메모리 내부에서 연속공간으로 할당된다.
-		int[] kor = new int[3];
+		int[] kor = new int[8];
 		
 		//3명의 국어점수 입력
 		for(int i=0; i<kor.length; i++) {
