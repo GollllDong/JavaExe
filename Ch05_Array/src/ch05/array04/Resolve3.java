@@ -10,7 +10,7 @@ public class Resolve3 {
 		int sum = 0;
 		int total, avg = 0;
 		for(int i = 1; i <= value.length; i++) {			
-			System.out.println("학점 입력 >>> ");
+			System.out.print("학점 입력 >>> ");
 			Scanner sc = new Scanner(System.in);
 			sum += sc.nextInt();
 		}
