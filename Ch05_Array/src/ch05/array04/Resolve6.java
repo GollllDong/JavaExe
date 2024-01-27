@@ -11,14 +11,16 @@ public class Resolve6 {
 		
 		String[] name = new String[5];
 		int[] score = new int[5];
-		for(int i = 0; i <= name.length-1; i++) {
-			Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i <= name.length-1; i++) {
 			
 			System.out.print("이름 입력 >>> ");
 			name[i] = sc.next();
 			
+			
 			System.out.print("점수 입력 >>> ");
 			score[i] = sc.nextInt();
+			System.out.println("---------------");
 		}
 		for(int i = 0; i < score.length; i++) {
 			if(score[i] >= 90) {
