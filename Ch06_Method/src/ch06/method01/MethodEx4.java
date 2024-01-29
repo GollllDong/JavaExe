@@ -52,7 +52,8 @@ public class MethodEx4 {
 		System.out.print("연산자 입력(+ - * / %) >> ");
 		String op = sc.next();
 		
-		calcArith(num0, num1, op);
+		int result = calcArith(num0, num1, op);
+		viewResult(result);
 		
 		sc.close();
 	}
