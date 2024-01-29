@@ -5,7 +5,7 @@ import java.util.Scanner;
 // 메서드를 만들기 전 코드
 public class MethodEx2 {
 	//main 메서드 내의 계산하는 부분을 옮긴다.
-	public static void calcArith(int num0, int num1, String op) {
+	public static void calcArith(int num0, int num1, String op) {	// void는 실행만 하게할때, return문을 사용 안해도된다.
 		int result = 0;		// 결과값 저장 변수
 		
 		// 2) 계산을 하는 부분
