@@ -7,14 +7,11 @@ public class Resolve4 {
 		// int배열에 3의 배수를 차례대로 저장하세요.
 		// 그리고 거꾸로 출력하세요.
 		int[] value = new int[10];
-		for(int i = 1; i <= value.length-1; i++) {			
-			value[i] = 3*i;
+		for (int i = 0; i < value.length; i++) {
+			value[i] = 3 * (i + 1);
 		}
-		for(int j = 9; j < value.length; j--) {
-			System.out.println((j+1) + "번째 값 : "+value[j]);
-			if (value[j] == 0) {
-				break;
-			}
+		for (int j = value.length - 1; j >= 0; j--) {
+			System.out.println((j + 1) + "번째 값 : " + value[j]);
 		}
 	}
 }
