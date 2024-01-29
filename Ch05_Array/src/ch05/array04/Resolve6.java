@@ -12,9 +12,9 @@ public class Resolve6 {
 		String[] name = new String[5];
 		int[] score = new int[5];
 		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i <= name.length-1; i++) {
+		for (int i = 0; i < name.length; i++) {
 			
-			System.out.print("이름 입력 >>> ");
+			System.out.print((i+1)+"번째 학생 이름 >>> ");
 			name[i] = sc.next();
 			
 			
@@ -24,16 +24,17 @@ public class Resolve6 {
 		}
 		for(int i = 0; i < score.length; i++) {
 			if(score[i] >= 90) {
-				System.out.println("A학점");
+				System.out.println(name[i]+" 학생 A학점");
 			}else if(score[i] >= 80) {
-				System.out.println("B학점");
+				System.out.println(name[i]+" 학생 B학점");
 			}else if(score[i] >= 70) {
-				System.out.println("C학점");
+				System.out.println(name[i]+" 학생 C학점");
 			}else if(score[i] >= 60) {
-				System.out.println("D학점");
+				System.out.println(name[i]+" 학생 D학점");
 			}else {
-				System.out.println("F학점");
+				System.out.println(name[i]+" 학생 F학점");
 			}
 		}
+		sc.close();
 	}
 }
