@@ -21,8 +21,8 @@ public class Resolve3 {
 			if (value.equals("1")) {
 				System.out.println("예금기능");
 				System.out.print("예금액 : ");
-				value1 = sc.nextInt();
-				account += value1;
+				value1 = sc.nextInt();	// String a = sc.nextLine(); 으로 받을 수 있다.
+				account += value1;	// account += Integer.parseInt(a);도 가능하다.
 			} else if (value.equals("2")) {
 				System.out.println("출금기능");
 				System.out.print("출금액 : ");
