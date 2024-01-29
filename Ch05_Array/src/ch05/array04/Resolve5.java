@@ -10,15 +10,16 @@ public class Resolve5 {
 		// 사용자로부터 10개의 값을 입력받고
 		// 순서대로 출력하고 총합을 구하세요
 		int[] value = new int[10];
+		Scanner sc = new Scanner(System.in);
 		int sum = 0;
 		for (int i = 0; i <= value.length - 1; i++) {
-			System.out.print("값 입력 >>> ");
+			System.out.print((i + 1) + "번쨰 " + "값 입력 >>> ");
 
-			Scanner sc = new Scanner(System.in);
 			value[i] = sc.nextInt();
 			sum += value[i];
 		}
 		System.out.println(Arrays.toString(value));
 		System.out.println("총합 : " + sum);
+		sc.close();
 	}
 }
