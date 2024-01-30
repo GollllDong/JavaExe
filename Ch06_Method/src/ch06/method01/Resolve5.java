@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Resolve5 {
 
 	public static void star(int num) {
-		for (int i = 1; i <= num; i++) {
-			for(int j = 1; j <= i; j++) {
+		for (int i = 1; i <= num; i++) { // 세로행의 변화
+			for(int j = 1; j <= i; j++) { // 가로열의 변화
 				System.out.print("*");
 			}
 			System.out.println();
