@@ -16,23 +16,20 @@ public class SwitchEx {
 		Scanner sc = new Scanner(System.in);
 		int sel = sc.nextInt();
 		switch(sel){
-			case 1 :
+			case Menu.ZZAJANGMYUN :
 				System.out.println("짜장면이 나왔습니다.");
 				break;
-			case 2 :
+			case Menu.ZZAMBBONG :
 				System.out.println("짬뽕이 나왔습니다.");
 				break;
-			case 3 :
+			case Menu.TANGSUYUK:
 				System.out.println("탕수육이 나왔습니다.");
 				break;
-			case 4 :
+			case Menu.YOUSANSUL :
 				System.out.println("유산슬이 나왔습니다.");
 				break;
-			case 5 :
-				System.out.println("너비아니가 나왔습니다.");
-				break;
-			case 6 :
-				System.out.println("잡채밥이 나왔습니다.");
+			case Menu.YOULINGI :
+				System.out.println("유린가 나왔습니다.");
 				break;
 			default :
 				System.out.println("해당 메뉴 번호가 없습니다.");
