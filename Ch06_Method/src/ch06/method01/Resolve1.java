@@ -26,6 +26,8 @@ public class Resolve1 {
 		System.out.println("큰 값 : "+big(tmp1,tmp2));
 		System.out.println("작은 값 : " + small(tmp1,tmp2));
 		
+		sc.close();
+		
 //		if(tmp1 > tmp2) { // 1번째 값이 더 클 경우
 //			big(tmp1);    // 1번째 값을 big 메소드에 할당
 //			small(tmp2);  // 2번째 값을 small 메소드에 할당

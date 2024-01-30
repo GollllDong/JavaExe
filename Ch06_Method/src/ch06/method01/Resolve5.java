@@ -27,7 +27,7 @@ public class Resolve5 {
 		
 
 		star(num);
-
+		sc.close();
 	}
 
 }

@@ -21,7 +21,7 @@ public class Resolve4 {
 		
 
 		gugudan(tmp);
-
+		sc.close();
 	}
 
 }
