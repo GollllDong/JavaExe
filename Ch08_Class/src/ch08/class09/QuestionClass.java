@@ -105,22 +105,42 @@ public static void answer1(Scanner sc) {
 
 // 2번 문제에 대한 풀이
 public static void answer2(Scanner sc) {
-
+	/* 1) ChinaMain클래스에서 Scanner클래스와 China클래스의 객체를 생성한다
+	 * 2) sc라는 Scanner클래스의 객체를 China클래스의 인스턴스 변수로 주게 된다.
+	 * 3) China클래스에서 필드를 생성해주고 store_menu()메서드에서 for문을 이용하여 어떤 가게가 있나 출력
+	 * 4) 중국집을 고르게 하기 위해서 sc.nextInt()를 이용해 가게 선택
+	 * 5) 고른 가게에 대한 메소드로 이동시키고 각 가게마다의 메뉴 및 고르기까지 실행
+	 */
 }
 
 // 3번 문제에 대한 풀이
 public static void answer3(Scanner sc) {
-
+	/*	1) MartMain 클래스에서 Mart클래스에 대한 객체 생성
+	 *  2) Mart클래스에서 필드를 선언 후 buy()메소드를 통해 배 구매 로직 구현
+	 *  3) MartMain 클래스에서 객체를 이용해 buy()메소드 실행
+	 * */
 }
 
 // 4번 문제에 대한 풀이
 public static void answer4(Scanner sc) {
-
+	/*	1) 메인 파일에서 Song클래스에 대한 객체를 생성
+	 *  2) Song파일에서 private로 필드 생성
+	 *  3) 객체.setSongInfo()에서 인자값을 할당.
+	 *  4) setSongInfo메소드를 통해 this생성자를 통해 인자값을 필드에 존재하는 인스턴스 변수에 값을 할당한다.(setter)
+	 *  5) getter기능을 이용해 값들을 반환
+	 *  6) 화면에 출력되기 위해 show메소드에 매개변수로 Song클래스의 객체를 주고 메소드 호출
+	 * */
 }
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+	/* 1) 메인메소드에서 x1, x2, y1, y2값 4개를 입력받아서 변수에 할당
+	 * 2) set()메소드에 입력받은 값을 할당
+	 * 3) Rectangle클래스에서 필드를 선언해주고 필드에 값을 할당해주는 메소드 생성(this()생성자 활용)
+	 * 4) 사각형의 넓이와 화면에까지 보여주는 메소드 생성(this생성자를 이용해 필드값으로 계산)
+	 * 5) 내가 입력한 값과 set()메소드를 이용한 값의 좌표가 일치할 경우 true를 출력하기 위해 boolean 자료형으로 생성.
+	 * 6) 메인메서드에서 메서드 실행
+	 * */
 }
 
 // 전체의 시작인 main 메서드
