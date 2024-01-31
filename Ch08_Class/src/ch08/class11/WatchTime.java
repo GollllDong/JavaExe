@@ -18,9 +18,7 @@ public class WatchTime {
 	}
 	// public void viewTime(WatchTime this)
 	public void viewTime() {
-		if (isNum) {
-			System.out.printf("[%02d:%02d:%02d]\n", hour, min, sec);
-		}
+		System.out.printf("[%02d:%02d:%02d]\n", hour, min, sec);
 	}
 
 	public static void main(String[] args) {
