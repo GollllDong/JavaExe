@@ -102,7 +102,12 @@ public static int getSelectMenu(Scanner sc) {
 
 // 1번 문제에 대한 풀이
 public static void answer1(Scanner sc) {
-
+	/* 
+	 * 각종 연산 메소드들 생성하고 해당 메소드마다 필드에 변수 2개 선언
+	 * main 메서드에서 2개의 값을 입력받고 String형으로 연산자도 입력받는다.
+	 * setValue라는 메소드를 이용하여 2개의 값을 필드에 할당
+	 * calculate 메소드에 연산 작업 후 결과값 return
+	 * */
 }
 
 // 2번 문제에 대한 풀이
@@ -122,7 +127,10 @@ public static void answer4(Scanner sc) {
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+ /*	메인메서드에서 Resolve5_1에 대한 객체 생성 및 필드의 값 할당
+  * 필드의 값 설정해주고 첫번째, 두번째 게임일때 연산하고 필드에 반영
+  * 화면에 출력하기 위해서 값 받아와서 변수에 할당, 출력
+  * */
 }
 
 // 전체의 시작인 main 메서드
