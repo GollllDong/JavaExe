@@ -10,7 +10,7 @@ public class ChinaMain {
 		China china = new China();
 		
 		china.sc = sc;
-		china.store_all();
+		china.store_menu();
 		china.store_choice();
 		
 		sc.close();

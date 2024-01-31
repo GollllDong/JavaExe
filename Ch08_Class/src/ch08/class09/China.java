@@ -10,7 +10,7 @@ public class China {
 	public Scanner sc;
 	public String result;
 
-	public void store_all() { // 가게 메뉴 보여줌
+	public void store_menu() { // 가게 메뉴 보여줌
 		for (int i = 0; i < store.length; i++) {
 			result = (i + 1) + "번째 가게 : " + store[i];
 			System.out.println(result);
