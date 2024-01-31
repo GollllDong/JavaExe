@@ -1,10 +1,10 @@
 package ch08.class09;
 
 public class Mart {
-	int money = 5000;
-	int peer = 2500;
-	int result = 0;
-	int buy_peer = 0;
+	private int money = 5000;
+	private int peer = 2500;
+	private int result = 0;
+	private int buy_peer = 0;
 	
 	public int buy() {
 		System.out.println("배 가격은 2500원 입니다.");
