@@ -17,6 +17,9 @@ public class Song {
 //	   <main 실행>
 //	    ABBA의 "Dancing Queen"노래를 Song객체로 생성하고
 //	    Show()로 출력하세요
+	
+	// getter를 이용해서 값을 Main으로 보내주고, setter를 이용해서 해당 필드에 값을 할당.
+	// 이때 getter는 void X, return 사용	setter는 void O, return X
 	private String title;
 	private String artist;
 	private String album;
@@ -24,9 +27,48 @@ public class Song {
 	private int year;
 	private int track;
 	
+	// setter
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+	public void setComposer(String composer) {
+		this.composer = composer;
+	}
+	public void setYear(int year) {
+		if (year < 0) {
+			return;
+		}
+		this.year = year;
+	}
+	public void setTrack(int track) {
+		this.track = track;
+	}
 	
-	
-	
+	// getter
+	public String getTitle() {
+		return title;
+	}
+	public String getArtist() {
+		return artist;
+	}
+	public String getAlbum() {
+		return album;
+	}
+	public String getComposer() {
+		return composer;
+	}
+	public int getYear() {
+		return year;
+	}
+	public int getTrack() {
+		return track;
+	}
 //	setSongInfo() {
 //		
 //	}
