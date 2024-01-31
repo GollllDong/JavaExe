@@ -27,28 +27,38 @@ public class Song {
 	private int year;
 	private int track;
 	
-	// setter
-	public void setTitle(String title) {
+	//setter 방식
+	public void setSongInfo(String title, String artist, String album, String composer, int year, int track) {
 		this.title = title;
-	}
-	public void setArtist(String artist) {
 		this.artist = artist;
-	}
-	public void setAlbum(String album) {
 		this.album = album;
-	}
-	public void setComposer(String composer) {
 		this.composer = composer;
-	}
-	public void setYear(int year) {
-		if (year < 0) {
-			return;
-		}
 		this.year = year;
-	}
-	public void setTrack(int track) {
 		this.track = track;
 	}
+	
+	// setter
+//	public void setTitle(String title) {
+//		this.title = title;
+//	}
+//	public void setArtist(String artist) {
+//		this.artist = artist;
+//	}
+//	public void setAlbum(String album) {
+//		this.album = album;
+//	}
+//	public void setComposer(String composer) {
+//		this.composer = composer;
+//	}
+//	public void setYear(int year) {
+//		if (year < 0) {
+//			return;
+//		}
+//		this.year = year;
+//	}
+//	public void setTrack(int track) {
+//		this.track = track;
+//	}
 	
 	// getter
 	public String getTitle() {

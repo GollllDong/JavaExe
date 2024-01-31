@@ -2,7 +2,7 @@ package ch08.class09;
 
 public class SongMain {
 	
-	public static void view_info(Song s) {
+	public static void show(Song s) {
 		System.out.println("노래 제목 : " + s.getTitle());
 		System.out.println("가수 : " + s.getArtist());
 		System.out.println("앨범 제목 : " + s.getAlbum());
@@ -29,17 +29,22 @@ public class SongMain {
 	public static void main(String[] args) {
 		Song s1 = new Song();
 		
-		s1.setTitle("팔레트");	// setter를 통해 Song.java의 필드에 할당.
-		s1.setArtist("아이유");
-		s1.setAlbum("물감");
-		s1.setComposer("GD");
-		s1.setYear(2015);
-		s1.setTrack(1);
+		s1.setSongInfo("팔레트", "아이유", "물감", "GD", 2015, 3);
 		
-		view_info(s1);
+//		s1.setTitle("팔레트");	// setter를 통해 Song.java의 필드에 할당.
+//		s1.setArtist("아이유");
+//		s1.setAlbum("물감");
+//		s1.setComposer("GD");
+//		s1.setYear(2015);
+//		s1.setTrack(1);
 		
+		show(s1);
+		
+		System.out.println();
 		
 		Song s2 = new Song();
+		s2.setSongInfo("As it was", "Harry Styles", "Exit", "GD", 2019, 6);
+		show(s2);
 	}
 
 }
