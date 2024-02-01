@@ -12,11 +12,14 @@ public class Resolve2 {
 		height = _height;
 		
 	}
+	public int getHeight() {
+		return height;
+	}
 	void setDownLine(int down_line) {
 		this.down_line = down_line;
 	}
 	
 	public double TriArea() {
-		return height*down_line/2;
+		return down_line*height/2;
 	}
 }
