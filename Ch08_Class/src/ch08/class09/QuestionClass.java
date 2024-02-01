@@ -7,6 +7,8 @@ import ch08.class09.answer01.FruitSeller;
 import ch08.class09.answer02.China;
 import ch08.class09.answer03.PearBuyer;
 import ch08.class09.answer03.PearSeller;
+import ch08.class09.answer04.Song;
+import ch08.class09.answer05.Rectangle;
 
 /*
 1.FruitMain클래스에		
@@ -125,9 +127,9 @@ public class QuestionClass {
 		PearSeller seller = new PearSeller(20);
 		PearBuyer buyer = new PearBuyer(5000);
 		buyer.showButResult();
-		
+
 		buyer.buyPear(seller, 2000);
-		
+
 		seller.showSaleResult();
 		buyer.showButResult();
 
@@ -141,6 +143,17 @@ public class QuestionClass {
 		 * 인스턴스 변수에 값을 할당한다.(setter) 5) getter기능을 이용해 값들을 반환 6) 화면에 출력되기 위해 show메소드에
 		 * 매개변수로 Song클래스의 객체를 주고 메소드 호출
 		 */
+		Song s1 = new Song();
+
+		s1.setSongInfo("팔레트", "아이유", "물감", "GD", 2015, 3);
+
+		Song.show(s1);
+
+		System.out.println();
+
+		Song s2 = new Song();
+		s2.setSongInfo("As it was", "Harry Styles", "Exit", "GD", 2019, 6);
+		Song.show(s2);
 	}
 
 // 5번 문제에 대한 풀이
@@ -151,6 +164,30 @@ public class QuestionClass {
 		 * 보여주는 메소드 생성(this생성자를 이용해 필드값으로 계산) 5) 내가 입력한 값과 set()메소드를 이용한 값의 좌표가 일치할 경우
 		 * true를 출력하기 위해 boolean 자료형으로 생성. 6) 메인메서드에서 메서드 실행
 		 */
+		Scanner sc1 = new Scanner(System.in);
+		Rectangle r1 = new Rectangle();
+		
+		System.out.println("x1 좌표 입력 : ");
+		int num1 = sc1.nextInt();
+		System.out.println("x2 좌표 입력 : " );
+		int num2 = sc1.nextInt();
+		System.out.println("y1 좌표 입력 : ");
+		int num3 = sc1.nextInt();
+		System.out.println("y2 좌표 입력 : ");
+		int num4 = sc1.nextInt();
+		
+		r1.set(num1, num2, num3, num4);
+		r1.square();
+		r1.show();
+		r1.equals(r1);
+		
+		Rectangle r2 = new Rectangle();
+		
+		r2.set(5, 2, 9, 2);
+		
+		r2.square();
+		r2.show();
+		System.out.println(r1.equals(r2));
 	}
 
 // 전체의 시작인 main 메서드
