@@ -112,7 +112,12 @@ public static void answer1(Scanner sc) {
 
 // 2번 문제에 대한 풀이
 public static void answer2(Scanner sc) {
-
+	/*Main에서 Resolve2에 대한 객체를 2개 생성하고 생성자의 초기화 값할당.
+	 * Resolve2클래스에서 필드를 선언하고 기본 생성자 초기화를 통해서 필드에 값 할당
+	 * 생성자 초기화로 준값으로 넓이를 먼저 구함.
+	 * setter를 이용해 윗변과 아랫변 값 할당 -> setHeight, setDownLine
+	 * 다시 넓이를 구해서 확인
+	 * */
 }
 
 // 3번 문제에 대한 풀이
