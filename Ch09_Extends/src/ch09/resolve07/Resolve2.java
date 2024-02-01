@@ -16,7 +16,7 @@ public class Resolve2 {
 		this.down_line = down_line;
 	}
 	
-	int TriArea() {
+	public double TriArea() {
 		return height*down_line/2;
 	}
 }
