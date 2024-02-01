@@ -6,7 +6,7 @@ public class RegularEmployee extends Employee {
 	protected int yearSalary;	// 연봉
 	protected int bonus;		// 보너스
 
-	public RegularEmployee(String empno, String name, int yearSalary, int bouns, int bonus) {
+	public RegularEmployee(String empno, String name, int yearSalary, int bonus) {
 		super(empno, name);	// Employee(empno, name) 호출
 		this.yearSalary = yearSalary;
 		this.bonus = bonus;
