@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer04;
 
 public class SongMain {
 	
