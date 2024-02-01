@@ -9,6 +9,19 @@ package ch08.class03;
  * */
 
 public class Arith {
+	private int value1 = 0;
+	private int value2 = 0;
+	
+	// 인스턴스 메소드
+	public Arith(int value1, int value2) {
+		this.value1 = value1;
+		this.value2 = value2;
+	}
+	// 인스턴스 메소드
+	public int add_2() {
+		return value1 + value2;
+	}
+	// 클래스 메소드
 	public static int add(int num0, int num1) {
 		return num0 + num1;
 	}
