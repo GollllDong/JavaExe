@@ -13,6 +13,8 @@ public class Child extends Father {
 		super(score, money); {
 		this.day = day;
 		System.out.println("Child 매개변수 생성자");
+		System.out.println(day);
+		System.out.println("-----------");
 		}
 	}
 	

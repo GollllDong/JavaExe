@@ -11,7 +11,9 @@ public class Father extends GrandFather {
 	Father(int score, long money) {
 		super(score);	// GrandFather의 매개변수 생성자 호출
 		this.money = money;
+		System.out.println(money);
 		System.out.println("Father 매개변수 생성자");
+		System.out.println("-----------");
 	}
 	
 	void wealth() {

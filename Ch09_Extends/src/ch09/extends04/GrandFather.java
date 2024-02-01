@@ -10,6 +10,8 @@ public class GrandFather {
 	GrandFather(int score) {
 		this.handsomeScore = score;
 		System.out.println("GrandFather 생성자");
+		System.out.println(score);
+		System.out.println("-----------");
 	}
 
 	void handsome() {
