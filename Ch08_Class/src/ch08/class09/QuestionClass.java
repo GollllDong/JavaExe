@@ -5,6 +5,8 @@ import java.util.Scanner;
 import ch08.class09.answer01.FruitBuyer;
 import ch08.class09.answer01.FruitSeller;
 import ch08.class09.answer02.China;
+import ch08.class09.answer03.PearBuyer;
+import ch08.class09.answer03.PearSeller;
 
 /*
 1.FruitMain클래스에		
@@ -120,6 +122,15 @@ public class QuestionClass {
 		 * 1) MartMain 클래스에서 Mart클래스에 대한 객체 생성 2) Mart클래스에서 필드를 선언 후 buy()메소드를 통해 배 구매
 		 * 로직 구현 3) MartMain 클래스에서 객체를 이용해 buy()메소드 실행
 		 */
+		PearSeller seller = new PearSeller(20);
+		PearBuyer buyer = new PearBuyer(5000);
+		buyer.showButResult();
+		
+		buyer.buyPear(seller, 2000);
+		
+		seller.showSaleResult();
+		buyer.showButResult();
+
 	}
 
 // 4번 문제에 대한 풀이
