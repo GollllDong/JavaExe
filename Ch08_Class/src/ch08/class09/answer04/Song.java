@@ -36,6 +36,15 @@ public class Song {
 		this.year = year;
 		this.track = track;
 	}	
+	
+	public static void show(Song s) {
+		System.out.println("노래 제목 : " + s.getTitle());
+		System.out.println("가수 : " + s.getArtist());
+		System.out.println("앨범 제목 : " + s.getAlbum());
+		System.out.println("작곡가 : " + s.getComposer());
+		System.out.println("노래 발표 연도 : " + s.getYear());
+		System.out.println("앨범에서의 트랙 번호 : " + s.getTrack());
+	}
 
 	public String getTitle() {
 		return title;

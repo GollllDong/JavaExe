@@ -1,15 +1,7 @@
 package ch08.class09.answer04;
 
 public class SongMain {
-	
-	public static void show(Song s) {
-		System.out.println("노래 제목 : " + s.getTitle());
-		System.out.println("가수 : " + s.getArtist());
-		System.out.println("앨범 제목 : " + s.getAlbum());
-		System.out.println("작곡가 : " + s.getComposer());
-		System.out.println("노래 발표 연도 : " + s.getYear());
-		System.out.println("앨범에서의 트랙 번호 : " + s.getTrack());
-	}
+
 //	4. 노래를 나타내는 Song이라는 클래스를 설계하세요.
 //	   <필드>
 //	    노래제목 title
@@ -38,13 +30,13 @@ public class SongMain {
 //		s1.setYear(2015);
 //		s1.setTrack(1);
 		
-		show(s1);
+		s1.show(s1);
 		
 		System.out.println();
 		
 		Song s2 = new Song();
 		s2.setSongInfo("As it was", "Harry Styles", "Exit", "GD", 2019, 6);
-		show(s2);
+		s2.show(s2);
 	}
 
 }
