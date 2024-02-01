@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer01;
 
 import java.util.Scanner;
 
@@ -7,14 +7,12 @@ public class FruitMain {
 	public static void main(String[] args) {
 		Scanner sc = null;
 		
-		FruitSeller seller = new FruitSeller(20, sc);
+		FruitSeller seller = new FruitSeller(20);
 		FruitBuyer buyer = new FruitBuyer(10000);
-		
-		seller.Refund();
-		
+
 		buyer.showButResult();
 		
-		buyer.buyApple(seller, 2000);
+		buyer.buyApple(2000);
 //		seller.saleApple(buyer, 2000);
 		
 		

@@ -1,6 +1,5 @@
 package ch09.resolve07;
 
-
 public class Resolve2Main {
 	public static void main(String[] args) {
 		Resolve2 tri1 = new Resolve2(10,10);
