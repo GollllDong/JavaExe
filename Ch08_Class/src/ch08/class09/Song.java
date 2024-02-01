@@ -35,32 +35,8 @@ public class Song {
 		this.composer = composer;
 		this.year = year;
 		this.track = track;
-	}
-	
-	// setter
-//	public void setTitle(String title) {
-//		this.title = title;
-//	}
-//	public void setArtist(String artist) {
-//		this.artist = artist;
-//	}
-//	public void setAlbum(String album) {
-//		this.album = album;
-//	}
-//	public void setComposer(String composer) {
-//		this.composer = composer;
-//	}
-//	public void setYear(int year) {
-//		if (year < 0) {
-//			return;
-//		}
-//		this.year = year;
-//	}
-//	public void setTrack(int track) {
-//		this.track = track;
-//	}
-	
-	// getter
+	}	
+
 	public String getTitle() {
 		return title;
 	}
@@ -79,8 +55,5 @@ public class Song {
 	public int getTrack() {
 		return track;
 	}
-//	setSongInfo() {
-//		
-//	}
 	
 }
