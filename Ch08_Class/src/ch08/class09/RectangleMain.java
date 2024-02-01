@@ -28,5 +28,6 @@ public class RectangleMain {
 		r2.square();
 		r2.show();
 		System.out.println(r1.equals(r2));
+		sc.close();
 	}
 }
