@@ -1,5 +1,13 @@
 package ch09.resolve07.answer05;
 
+
+/* 클래스 설계에서 접근권한 설정
+ * 1) 필드 -> private
+ *    메서드 -> public
+ * 2) 메서드 중에 내부에서만 사용하는 메서드 -> private
+ * 
+ * 
+ * */
 public class Resolve5 {
 	private int bead1;
 	private int bead2;
