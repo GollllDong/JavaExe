@@ -1,6 +1,10 @@
 package ch09.resolve07;
 
+import java.util.Arrays;
 import java.util.Scanner;
+
+import ch09.resolve07.answer03.ArrayUtility;
+import ch09.resolve07.answer05.Resolve5;
 
 
 /*
@@ -81,6 +85,7 @@ public class QuestionClass {
 			+ "     2차 놀이에서 어린이2는 어린이 1의 구슬 7개를 획득한다\r\n"
 			+ "     마지막으로 각각의 어린이가 보유하고 있는 구슬의 수를 출력한다\r\n"
 			+ "     프로그램을 종료한다.\r\n"
+			+ "6. 프로그램을 종료한다.\r\n"
 			+ "";
 	
 	System.out.println("\n\n\n------------------------------------");
@@ -122,12 +127,20 @@ public static void answer2(Scanner sc) {
 
 // 3번 문제에 대한 풀이
 public static void answer3(Scanner sc) {
-
+	int[] intArr = new int[] {31, 11, 9, 99, 2};
+	double[] dArr = ArrayUtility.intToDouble(intArr);
+	System.out.println(Arrays.toString(dArr));
+	
+	double[] dArr1 = new double[] {2.1, 3.4, 5.5, 7.9, 1.2};
+	int[] intArr1 = ArrayUtility.doubleToInt(dArr1);
+	System.out.println(Arrays.toString(dArr1));
+	System.out.println(Arrays.toString(intArr1));
 }
 
 // 4번 문제에 대한 풀이
 public static void answer4(Scanner sc) {
-
+	
+	
 }
 
 // 5번 문제에 대한 풀이
@@ -136,6 +149,10 @@ public static void answer5(Scanner sc) {
   * 필드의 값 설정해주고 첫번째, 두번째 게임일때 연산하고 필드에 반영
   * 화면에 출력하기 위해서 값 받아와서 변수에 할당, 출력
   * */
+	Resolve5 re = new Resolve5(15, 9);
+	re.FirstGame();
+	re.SecondGame();
+	re.View_Info();
 }
 
 // 전체의 시작인 main 메서드
@@ -176,6 +193,7 @@ public static void main(String[] args) {
 			System.out.println("번호를 잘 못 입력했습니다.");
 			break;
 		}			
+		sc.nextLine();
 	}
 
 	System.out.println("Program End~");
