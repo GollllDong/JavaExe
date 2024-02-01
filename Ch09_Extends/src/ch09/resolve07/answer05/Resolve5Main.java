@@ -1,4 +1,4 @@
-package ch09.resolve07;
+package ch09.resolve07.answer05;
 
 public class Resolve5Main {
 	public static void main(String[] args) {

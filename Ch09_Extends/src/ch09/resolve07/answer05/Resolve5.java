@@ -1,4 +1,4 @@
-package ch09.resolve07;
+package ch09.resolve07.answer05;
 
 public class Resolve5 {
 	private int bead1;

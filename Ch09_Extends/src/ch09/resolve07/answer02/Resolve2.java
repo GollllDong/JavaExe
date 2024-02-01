@@ -1,4 +1,4 @@
-package ch09.resolve07;
+package ch09.resolve07.answer02;
 
 public class Resolve2 {
 	private int height;
