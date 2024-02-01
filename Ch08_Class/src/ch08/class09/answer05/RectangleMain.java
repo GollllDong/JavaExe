@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer05;
 
 import java.util.Scanner;
 

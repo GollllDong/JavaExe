@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer05;
 
 public class Rectangle {
 	/*
@@ -21,7 +21,7 @@ public class Rectangle {
 	}
 
 	public int square() {
-		this.square = (this.x2 - this.x1) * (this.y2 - this.y1);
+		this.square = (this.x1 - this.x2) * (this.y1 - this.y2);
 		return this.square;
 	}
 
@@ -30,7 +30,7 @@ public class Rectangle {
 		System.out.println();
 		System.out.println("사각형 넓이 : " + this.square);
 	}
-	boolean equals(Rectangle r) {
+	public boolean equals(Rectangle r) {
 		if(this.x1 == r.x1 && this.x2 == r.x2 && this.y1 == r.y1 && this.y2 == r.y2) {
 			return true;
 		}
