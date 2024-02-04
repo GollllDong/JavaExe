@@ -1,6 +1,8 @@
 package ch09.resolve14.resolve3;
 
-public class BaseBallGame {
+import java.util.Scanner;
+
+public class BaseBallMain {
 
 	public static void main(String[] args) {
 		/*
@@ -11,6 +13,17 @@ public class BaseBallGame {
 		 * 클래스를 구현하세요 GeneratorThreeNum // 난수 3개를 생성하는 역할 BaseBallMenu // 메뉴를 담당하는 역할
 		 * DecisionBall // 스트라이크, 볼을 판단하는 역할 BaseBallMain // main메서드를 실행하는 역할
 		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.println("첫번째 숫자 입력 >>> ");
+		int value1 = sc.nextInt();
+		System.out.println("두번째 숫자 입력 >>> ");
+		int value2 = sc.nextInt();
+		System.out.println("세번째 숫자 입력 >>> ");
+		int value3 = sc.nextInt();
+		
+		DecisionBall db = new DecisionBall(value1, value2, value3);
+		
+		sc.close();
 
 	}
 
