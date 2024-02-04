@@ -1,16 +1,16 @@
-package ch09.abstract10;
+package ch09.abstract11;
 
 // 일용직 사원
 public class PartTimeEmployee extends Employee{
-
-	protected int dailyPay;	//일당
-	protected int workDay;	// 일한 일수
 	
-	public PartTimeEmployee(String empno, String name, int dailyPay, int workDay) {
+	protected int dailyPay;		// 일당
+	protected int workDay;		// 일한 일수
+
+	public PartTimeEmployee(String empno, String name,
+						int dailyPay, int workDay) {
 		super(empno, name);
 		this.dailyPay = dailyPay;
 		this.workDay = workDay;
-		
 	}
 
 	@Override
@@ -24,7 +24,10 @@ public class PartTimeEmployee extends Employee{
 		super.showEmployeeInfo();
 		System.out.println("dailyPay : " + dailyPay);
 		System.out.println("workDay : " + workDay);
-		System.out.printf("monthPay : %.2f \n", getMonthPay());
+		System.out.printf("monthPay : %.2f\n", getMonthPay());
 	}
 
 }
+
+
+
