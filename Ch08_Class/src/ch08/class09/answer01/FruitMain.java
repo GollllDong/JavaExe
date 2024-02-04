@@ -9,7 +9,7 @@ public class FruitMain {
 		buyer.showButResult();
 		
 		buyer.buyApple(2000);
-//		seller.saleApple(buyer, 2000);
+		seller.saleApple(buyer, 2000);
 		
 		
 		seller.showSaleResult();
