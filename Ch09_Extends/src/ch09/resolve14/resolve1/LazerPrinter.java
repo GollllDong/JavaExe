@@ -8,7 +8,6 @@ public class LazerPrinter extends Printer{
 		super(modelName, manufacturer, interfaceType, printNum, amountPaper);
 		this.tonerRemain = tonerRemain;
 		this.repetition = repetition;
-		// TODO Auto-generated constructor stub
 	}
 
 	
