@@ -18,7 +18,7 @@ public class PrinterMain {
 		String num1 = sc.next();
 		System.out.println("제조사 : ");
 		String num2 = sc.next();
-		System.out.println("인터페이스 종류(USB, paraller port) : ");
+		System.out.println("인터페이스 종류(USB, parallers port) : ");
 		String num3 = sc.next();
 		System.out.println("현재 인쇄매수 : ");
 		int num4 = sc.nextInt();
@@ -37,7 +37,7 @@ public class PrinterMain {
 		System.out.println("------------------------------");
 		
 		// 기본 생성자 초기화로 호출
-		InkPrinter ink = new InkPrinter("SL-T1672W", "삼성", "USB-C", 10, 100, 50, 5);
+		InkPrinter ink = new InkPrinter("SL-T1672W", "삼성", "USB-C", 10, 5, 50, 15);
 		ink.print();
 		System.out.println("남은 인쇄종이 : " + ink.view_remain());
 		
