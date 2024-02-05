@@ -7,8 +7,8 @@ public class LazerPrinter extends Printer {
 	public LazerPrinter(String modelName, String manufacturer, String interfaceType, int printNum, int amountPaper,
 			int tonerRemain, int repetition) {
 		super(modelName, manufacturer, interfaceType, printNum, amountPaper);
-		this.tonerRemain = tonerRemain;
-		this.repetition = repetition;
+		this.tonerRemain = tonerRemain;  // 토너 잔량
+		this.repetition = repetition;    // 반복 횟수
 	}
 
 	@Override

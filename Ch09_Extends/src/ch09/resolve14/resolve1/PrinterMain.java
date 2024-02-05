@@ -36,7 +36,7 @@ public class PrinterMain {
 		
 		System.out.println("------------------------------");
 		
-		// 기본 생성자 초기화로 호출
+		// 생성자 초기화로 호출
 		InkPrinter ink = new InkPrinter("SL-T1672W", "삼성", "USB-C", 10, 5, 50, 15);
 		ink.print();
 		System.out.println("남은 인쇄종이 : " + ink.view_remain());
