@@ -31,6 +31,6 @@ public class LinkedExample {
 			list2.add(0, String.valueOf(i));
 		}
 		endTime = System.nanoTime();
-		System.out.printf("%-17s %8d ns \n", "ArrayList 걸린 시간 : ", (endTime-startTime));
+		System.out.printf("%-17s %8d ns \n", "LinkedList 걸린 시간 : ", (endTime-startTime));
 	}
 }
