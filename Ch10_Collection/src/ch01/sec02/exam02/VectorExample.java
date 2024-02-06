@@ -1,6 +1,14 @@
 package ch01.sec02.exam02;
 
 import java.util.List;
+
+/* ArrayList와 동일하다.
+ * 
+ * 다만 멀티스레드 환경에서 2개이상의 스레드가 동시접근할 때 안전하다.
+ * 1개 스레드일 때는 ArrayList보다 약간 성능 저하가 있다.(동기화 처리때문)
+ * 공부만 하면 스레드 1개, 공부, 커피, 노래를 동시에 들으려면 스레드 3개 필요.
+ * */
+
 import java.util.Vector;
 
 public class VectorExample {
