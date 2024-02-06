@@ -1,6 +1,12 @@
 package ch01.sec03.exam02;
 
-import java.util.*;
+/* Member객체의 내용(이름, 나이)로 객체가 같은지 다른지 비교하기 위해서는
+ * Object로부터 상속받은 1) hashCode()와 2) equals()를 오버라이딩 해야한다.
+ * 오버라이딩을 하지 않으면 각각 객체의 해시값과 객체의 주소를 가지고 비교하지만
+ * 아래처럼 오버라이딩하면 객체내의 필드 내용으로 비교한다.
+ * 
+ * 그러므로 주소록이나 이런 데이터를 저장할 때는 아래처럼 하는 것이 필요하다.
+ * */
 
 public class Member {
 	public String name;
@@ -13,7 +19,8 @@ public class Member {
 	
 	// hashcode 재정의
 	public int hashCode() {
-		return name.hashCode() + age;
+		// return super.hashCode(); 16진수 해시값
+		 return name.hashCode() + age;
 	}
 	
 	// equals 재정의
