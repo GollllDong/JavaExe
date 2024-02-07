@@ -1,12 +1,14 @@
 package ch01.collection02.hashmap02;
 
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
+import java.util.Set;
 
 public class EmployeeManager {
 	private final int EMP_NUM = 100;	// 100명 사원이 최대
-	// Employee의 자식객체들을 저장
-	private Employee[] empArr = new Employee[EMP_NUM];
-	private int numOfEmp = 0;	// 저장된 사원객체 수, 다음 사원이 저장될 index
+	// Employee의 객체를 value로 준다;
+	private HashMap<String, Employee> empMap = new HashMap<>();
 	private Scanner sc = new Scanner(System.in);
 	
 	private int viewMenu() {
@@ -62,43 +64,28 @@ public class EmployeeManager {
 				new PartTimeEmployee(empno, name, dailyPay, workDay);
 		return emp;
 	}
-	private boolean saveEmployee(Employee emp) {
-		boolean isSave = true;
-		
-		if(this.numOfEmp < EMP_NUM) {
-			this.empArr[this.numOfEmp] = emp;
-			this.numOfEmp++;
-			isSave = true;
-		}else {
-			isSave = false;
-		}
-		
-		return isSave;
-	}
+
 	private void viewAllEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			this.empArr[i].showEmployeeInfo();
+		for(Employee emp : empMap.values()) {
+			emp.showEmployeeInfo();
 		}
 	}
 	private void viewRegEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+		for(Employee emp : empMap.values()) {
 			if(emp instanceof RegularEmployee)
-				this.empArr[i].showEmployeeInfo();
+				emp.showEmployeeInfo();
 		}
 	}
 	private void viewTempEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+		for(Employee emp : empMap.values()) {
 			if(emp instanceof TempEmployee)
-				this.empArr[i].showEmployeeInfo();
+				emp.showEmployeeInfo();
 		}
 	}
 	private void viewPartTimeEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+		for(Employee emp : empMap.values()) {
 			if(emp instanceof PartTimeEmployee)
-				this.empArr[i].showEmployeeInfo();
+				emp.showEmployeeInfo();
 		}
 	}
 	public void run() {
@@ -142,15 +129,17 @@ public class EmployeeManager {
 			
 			// emp객체가 존재한다면
 			if(emp != null) {
-				boolean isSave = saveEmployee(emp);
-				if(!isSave)
+				if(empMap.size() < EMP_NUM) {
+					empMap.put(emp.getEmpno(), emp);
+				}else {
 					System.out.println("더 이상 저장 공간이 없습니다.");
+				}
 			}
+			System.out.println("Program Exit...");
+		
 		}
-		System.out.println("Program Exit...");
 	}
 }
-
 
 
 

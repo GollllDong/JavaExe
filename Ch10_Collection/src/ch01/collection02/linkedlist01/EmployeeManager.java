@@ -6,10 +6,9 @@ import java.util.Scanner;
 
 public class EmployeeManager {
 	private final int EMP_NUM = 100;	// 100명 사원이 최대
-	// Employee의 자식객체들을 저장
+	// Employee의 객체들을 LinkedList컬렉션으로 저장하겠다.
 	List<Employee> empList = new LinkedList<Employee>();
 //	private Employee[] empArr = new Employee[EMP_NUM];
-	private int numOfEmp = 0;	// 저장된 사원객체 수, 다음 사원이 저장될 index
 	private Scanner sc = new Scanner(System.in);
 	
 	private int viewMenu() {

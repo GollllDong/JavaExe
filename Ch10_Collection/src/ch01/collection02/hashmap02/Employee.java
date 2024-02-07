@@ -8,6 +8,9 @@ public abstract class Employee {
 		this.empno = empno;
 		this.name = name;
 	}
+	public String getEmpno() {	// HashMap메서드의 사번을 키값으로 설정
+		return empno;
+	}
 	public void showEmployeeInfo() {
 		System.out.println("-------------------");
 		System.out.println("empno : " + empno);
