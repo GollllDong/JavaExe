@@ -3,7 +3,6 @@ package ch01.sec02.exam02;
 public class Board {
 	private String subject;
 	private String content;
-
 	private String writer;
 
 	public Board(String subject, String content, String writer) {
@@ -31,6 +30,7 @@ public class Board {
 	public String getWriter() {
 		return writer;
 	}
+
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
