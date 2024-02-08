@@ -34,6 +34,8 @@ public class EmployeeManager {
 		int yearSalary = sc.nextInt();
 		System.out.print("보너스 >> ");
 		int bonus = sc.nextInt();
+		
+		
 		RegularEmployee emp = 
 				new RegularEmployee(empno, name, yearSalary, bonus);
 		return emp;

@@ -28,12 +28,18 @@ public class EmployeeManager {
 	private RegularEmployee createRegularEmployee() {
 		System.out.print("사번 >> ");
 		String empno = sc.next();
+		if(empMap.containsKey(empno)) {
+			System.out.println("기존에 등록된 사원입니다. 다시 시도해주세요.");
+			
+		}
 		System.out.print("이름 >> ");
 		String name = sc.next();
 		System.out.print("연봉 >> ");
 		int yearSalary = sc.nextInt();
 		System.out.print("보너스 >> ");
 		int bonus = sc.nextInt();
+
+		
 		RegularEmployee emp = 
 				new RegularEmployee(empno, name, yearSalary, bonus);
 		return emp;

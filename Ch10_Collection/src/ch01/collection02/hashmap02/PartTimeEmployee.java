@@ -27,6 +27,12 @@ public class PartTimeEmployee extends Employee{
 		System.out.printf("monthPay : %.2f\n", getMonthPay());
 	}
 
+	@Override
+	public int checkduplicate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
 
 

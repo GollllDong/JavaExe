@@ -17,6 +17,8 @@ public abstract class Employee {
 		System.out.println("name : " + name);
 	}
 	public abstract double getMonthPay();	// 추상 메서드
+
+	public abstract int checkduplicate();
 	
 //	public abstract String getViewInfo();
 }
