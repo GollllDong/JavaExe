@@ -1,9 +1,7 @@
 package ch01.collection02.hashmap02;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Scanner;
-import java.util.Set;
 
 public class EmployeeManager {
 	private final int EMP_NUM = 100;	// 100명 사원이 최대
