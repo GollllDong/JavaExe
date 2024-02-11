@@ -6,15 +6,33 @@ public class FruitMain {
 		FruitSeller seller = new FruitSeller(20);
 		FruitBuyer buyer = new FruitBuyer(10000);
 
-		buyer.showButResult();
-		
+		buyer.showBuyResult();
+
 		buyer.buyApple(2000);
 		seller.saleApple(buyer, 2000);
-		
-		
+
 		seller.showSaleResult();
-		buyer.showButResult();
+		buyer.showBuyResult();
 
 	}
 
 }
+//
+//public class FruitMain {
+//
+//	public static void main(String[] args) {
+//		FruitSeller seller = new FruitSeller(20);
+//		FruitBuyer buyer = new FruitBuyer(10000);
+//
+//		buyer.showBuyResult();
+//		
+//		buyer.buyApple(2000);
+//		seller.saleApple(buyer, 2000);
+//		
+//		
+//		seller.showSaleResult();
+//		buyer.showBuyResult();
+//
+//	}
+//
+//}

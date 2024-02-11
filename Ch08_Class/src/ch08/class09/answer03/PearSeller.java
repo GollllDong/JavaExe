@@ -22,3 +22,20 @@ public class PearSeller {
 	}
 
 }
+//import java.util.Scanner;
+//
+//import ch08.pratice02.PearBuyer;
+//import ch08.pratice02.PearSeller;
+//
+//public class PearMain {
+//	public static void main(String[] args) {
+//		PearBuyer buyer = new PearBuyer(10000);
+//		PearSeller seller = new PearSeller(20, 1000);
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("구매하실 배 개수를 입력해주세요 : ");
+//		int value = sc.nextInt();
+//		buyer.buyPear(seller, value);
+//		sc.close();
+//	}
+//}
