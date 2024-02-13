@@ -4,8 +4,9 @@ import java.awt.Toolkit;
 
 public class BeppPrintExample {
 	public static void main(String[] args) {
+		// 메인 스레드가 Worker 스레드 생성 후 -> start() -> run() 실행
+		// 메인 스레드가 띵, worker 스레드는 비프음
 		Thread thread = new Thread(new Runnable() {
-			
 			@Override
 			public void run() {
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
