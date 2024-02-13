@@ -1,6 +1,6 @@
-package ch15.thread02;
+package ch15.thread02.join04;
 
-public class ThreadJoin {
+public class ThreadSleep {
 	public static void main(String[] args) {
 		
 		Thread t1 = new Thread(new Runnable() {
@@ -12,7 +12,7 @@ public class ThreadJoin {
 					System.out.println("누적 합 : " + sum);
 					
 					try {
-						Thread.sleep(300);
+						Thread.sleep(100);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -28,10 +28,7 @@ public class ThreadJoin {
 		t1.start();
 		
 		try {
-			// VM내의 스레드 종료 신호를 기다리고 있다.
-			// run()이 리턴되면 스레드는 종료 신호를 VM에 보낸다.
-			// 종료 신호(Signal)
-			t1.join();
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
