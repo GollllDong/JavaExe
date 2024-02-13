@@ -1,18 +1,18 @@
 package ch15.thread01.ch14.sec07.exam02;
 
-public class PrintThread extends Thread{
+public class PrintThread extends Thread {
 
-	
 	@Override
 	public void run() {
 		try {
-			while(true) {
+			while (true) {
 				System.out.println("실행 중");
 				Thread.sleep(1);
 			}
-		}catch(InterruptedException e) {
+		} catch (InterruptedException e) {
+			System.out.println(e);
 		}
-			System.out.println("리소스 정리");
-			System.out.println("실행 종료");
+		System.out.println("리소스 정리");
+		System.out.println("실행 종료");
 	}
 }

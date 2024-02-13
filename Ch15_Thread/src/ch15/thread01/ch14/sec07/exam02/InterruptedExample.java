@@ -6,9 +6,10 @@ public class InterruptedExample {
 		Thread.start();
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1);
 		}catch(InterruptedException e) {}
 		
-		Thread.interrupt();;
+		// thread에 InterruptedException을 thorws한다.
+		Thread.interrupt();
 	}
 }
