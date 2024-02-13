@@ -6,7 +6,7 @@ public class BeepPrintExample {
 
 	// main메소드는 main스레드가 해야할 일
 	public static void main(String[] args) {
-		// main스레드(주인 아저씨) 가 work스레드(알바생)을 고용하낟.
+		// main스레드(주인 아저씨) 가 work스레드(알바생)을 고용한다.
 		Thread thread = new Thread() {
 			
 			// 알바생이 해야할 일
