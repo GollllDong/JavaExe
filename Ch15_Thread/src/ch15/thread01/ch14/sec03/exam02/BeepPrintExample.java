@@ -2,7 +2,7 @@ package ch15.thread01.ch14.sec03.exam02;
 
 import java.awt.Toolkit;
 
-public class BeppPrintExample {
+public class BeepPrintExample {
 	public static void main(String[] args) {
 		// 메인 스레드가 Worker 스레드 생성 후 -> start() -> run() 실행
 		// 메인 스레드가 띵, worker 스레드는 비프음
