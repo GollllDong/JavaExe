@@ -6,8 +6,9 @@ public class JoinExample {
 		sumThread.start();
 		try {
 			sumThread.join();
-		}catch(InterruptedException e) {
+			//Thread.sleep(100);
+		} catch (InterruptedException e) {
 		}
-		System.out.println("1 - 100 합 : " + sumThread.getSum());
+		System.out.println("1~100 합: " + sumThread.getSum());
 	}
 }
