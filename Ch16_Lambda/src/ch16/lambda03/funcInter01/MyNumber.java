@@ -4,7 +4,7 @@ package ch16.lambda03.funcInter01;
  * 함수형 인터페이스는 반드시 추상 메서드가 1개여야만 한다.
  * */
 
-// 함수형 람다식을 위한 인터페이
+// 함수형 람다식을 위한 인터페이스 
 @FunctionalInterface // 이걸 써줌으로써 보다 안전한 인터페이스가 된다.
 public interface MyNumber {
 	int getMax(int num1, int num2);
