@@ -34,4 +34,8 @@ public class Car {
 	public void run3(Tire tire) {
 		tire.roll();
 	}
+	public void tireInfo() {
+		System.out.println(tire1);
+		System.out.println(tire2);
+	}
 }
