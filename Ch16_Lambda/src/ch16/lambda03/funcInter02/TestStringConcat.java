@@ -6,7 +6,7 @@ public class TestStringConcat {
 		String s1 = "Hello";
 		String s2 = "World";
 
-		// 인터페이스 상속 구현 클래스를 사용해서 출
+		// 인터페이스 상속 구현 클래스를 사용해서 출력 
 		StringConcat concat1 = new StringConcatImplement();
 		concat1.makeString(s1, s2);
 
