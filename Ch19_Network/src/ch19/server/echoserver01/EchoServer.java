@@ -19,11 +19,13 @@ public class EchoServer {
 	public static void main(String[] args) {
 		final int Port = 9000;
 		try {
+			// 이 서버 프로그램이 돌아가는 환경의 ip주소를 자동으로 소켓에 할당
 			ServerSocket server = new ServerSocket(Port);
 			System.out.println("Client 접속을 기다립니다....");
 			
 			// 새로운 소켓이 생성되서 클라이언트와 연결된 소켓이 된다.
 			// 클라이언트와 직접 통신(서비스)하는 소켓 객체 리턴
+			// 클라이언트와 연결과정(스트림 형성 과정)이 완료되면 리턴
 			Socket socket = server.accept(); // accept는 서버와 연결시켜주는 역할을 한다.
 			
 			// 클라이언트의 접속 신원 확인
@@ -40,7 +42,7 @@ public class EchoServer {
 			
 			// 클라이언트와 통신 시작
 			String line;
-			while(true) {
+			while(true) {				// 내부 버퍼로부터 '\n'까지 읽어들여라.
 				line = br.readLine();
 				if(line == null) {		// 통신이 끊어졌다. 상대방이 종료했다. 그럼 break
 					break;
