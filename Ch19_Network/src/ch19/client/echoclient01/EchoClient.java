@@ -1,4 +1,4 @@
-package ch19.server.echoclient02;
+package ch19.client.echoclient01;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -32,7 +32,7 @@ public class EchoClient {
 			
 			String line;
 			while(true) {
-				System.out.print("Clinet : ");
+				System.out.print("입력 : ");
 				line = keyboard.readLine();
 				if(line.equals("quit"))
 					break;
