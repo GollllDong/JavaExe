@@ -14,31 +14,31 @@ import java.net.Socket;
 public class EchoThreadServer {
 	public static void main(String[] args) {
 		final int PORT = 9000;
-		
+
 		try {
 			ServerSocket server = new ServerSocket(PORT);
 			System.out.println("Client 접속을 기다립니다...");
-			while(true) {
-				// 1. 클라이언트 접속(스트림이 연결되면 socket객체가 리턴된다.)
-				Socket socket = server.accept();
+			while (true) {
+				// 1. 클라이언트 접속(스트림이 연결되면 socket 객체가 리턴된다.)
+				Socket socket = server.accept(); // 주인(메인)이 새로운 소켓 등록해준다.
 				// 2. 클라이언트 담당 스레드 생성하여 통신을 전담시킨다.
-				EchoThread echoThread = new EchoThread(socket);
+				EchoThread echoThread = new EchoThread(socket); // 주인(메인)이 안내직원(서브)스레드를 만들어준다.
 				echoThread.start();
 			}
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 	}
 }
 
 class EchoThread extends Thread {
 	private Socket socket;
-	
+
 	public EchoThread(Socket socket) {
 		this.socket = socket;
 	}
-	
+
 	@Override
 	public void run() {
 		try {
@@ -48,24 +48,23 @@ class EchoThread extends Thread {
 			InputStream in = socket.getInputStream();
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+
 			String line;
-			while(true) {
+			while (true) {
 				line = br.readLine();
-				if(line == null) {
+				if (line == null) {
 					break;
 				}
 				System.out.println("클라이언트로부터 수신 : " + line);
-				
-				// 수신하자마자 Client한테 echo 전송
+
+				// 수신하자마자 Client 한테 echo 전송
 				pw.println(line);
 				pw.flush();
 			}
 			System.out.println(inetAddr.getHostAddress() + "Client 종료");
-			
-		}catch(Exception e) {
+
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
 }
-
-
