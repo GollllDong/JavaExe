@@ -97,11 +97,13 @@ class WorkerThread extends Thread {
 			
 			String line;
 			while(true) {
+				// client가 json오브젝트를 string으로 변환해서 보낸 것을 수
 				line = br.readLine();
 				if(line == null) {
 					break;
 				}
 				/*json패킷을 해석해서 알맞은 처리를 한다.*/
+				JSONOBJECT packetObj = new JSONObject(line);
 			}
 		} catch (Exception e) {
 			System.out.printf("<서버-%s>%s\n", getName(), e.getMessage());
