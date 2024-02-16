@@ -21,7 +21,7 @@ public class EchoClient {
 			// IP, Port로 서버 프로그램과 연결시도 후 성공하면 (서버에서는 accept()가 리턴)
 			// 스트림 생성
 			// 그리고 연결된 socket객체 리턴
-			Socket socket = new Socket("192.168.0.24", PORT); 		// 해당 IP주소를 넣었을때 서버가 열려있다면 연결된다. 
+			Socket socket = new Socket("192.168.0.28", PORT); 		// 해당 IP주소를 넣었을때 서버가 열려있다면 연결된다. IP주소는 가려는 곳의 주소지, PORT는 방 번호
 			// 키보드로부터 입력받기 위한 스트림 연결(Scanner 대신)
 			BufferedReader keyboard = new BufferedReader (
 									new InputStreamReader(System.in));	
