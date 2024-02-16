@@ -52,23 +52,29 @@ public class JsonChatServer {
  * 3) json 명령 패킷 종류
  * 		- {}내의 데이터의 값을 의미한다.
  * 	3-1) id등록
+ * 		cmd : ID
  * 		id : {id값}
  * 	3-2) 사칙연산
+ * 		cmd : Arith
  * 		id : {id값}
  * 		op : {연산자}
  * 		val1 : {첫번째값}
  * 		val2 : {두번째값}
  * 	3-3) 전체 채팅
+ * 		cmd : ALLCHAT
  * 		id : {id값}
  * 		youid : 미ㅣ
  * 		msg : {문자메시지}
  * 		
  *  3-4) 1:1 채팅 
+ *  	cmd : ONECHAT
  *  	id : {id값}
  * 		youid : {상대id}
  * 		msg : {문자메시지}
  * */
 
+// json 라이브러리 다운로드 후 등록
+// https://github.com/stleary/JSON-java
 
 class WorkerThread extends Thread {
 	private Socket socket;
