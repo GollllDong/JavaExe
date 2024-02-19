@@ -1,3 +1,1 @@
-use TESTDB;
-
-SELECT * FROM users;
+show databases;
