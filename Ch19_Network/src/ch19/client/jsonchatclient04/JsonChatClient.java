@@ -13,7 +13,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class JsonChatClient {
-	
+
+	// 클라이언트가 특정 메뉴를 진행하는 상태
 	public static ClientState mainState = ClientState.NONE;
 
 	public static void main(String[] args) {
