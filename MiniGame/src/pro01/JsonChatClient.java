@@ -29,9 +29,6 @@ public class JsonChatClient {
 				System.out.println(packet);
 			}
 			System.out.println("호선을 선택하세요 >> ");
-			
-			
-//            
 
 //6. 게임 시작 버튼 클릭 (0번 입력)
 
